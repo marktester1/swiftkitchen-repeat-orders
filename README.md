@@ -12,24 +12,68 @@ you can check the basket and pay yourself.
 > Unofficial and not affiliated with SwiftKitchen or Aspens. It clicks through
 > the same pages you would, so it can break if SwiftKitchen changes its website.
 
-## What you need
+## Getting started
 
-- Windows, macOS or Linux with [Python 3.10+](https://www.python.org/downloads/)
-- A SwiftKitchen parent account (Google Authenticator 2FA is fine)
+You need a Windows PC or a Mac, and your SwiftKitchen parent account (Google
+Authenticator 2FA is fine). You only do these steps once.
 
-## Setup (once)
+### 1. Install Python
+
+Download Python 3.10 or newer from [python.org/downloads](https://www.python.org/downloads/)
+and run the installer.
+
+- **Windows:** on the first installer screen, tick **"Add python.exe to PATH"**
+  before clicking **Install Now**. If you miss it, run the installer again and
+  choose **Modify**.
+- **Mac:** run the installer, then open the **Python 3.x** folder in
+  Applications and double-click **Install Certificates.command**.
+
+### 2. Download this script
+
+Near the top of this page, click the green **Code** button, then **Download ZIP**.
+Unzip it somewhere easy to find, e.g. your **Documents** folder. You'll get a
+folder called `swiftkitchen-repeat-orders-main`.
+
+### 3. Open a terminal in that folder
+
+- **Windows:** open the folder in File Explorer, click the address bar at the
+  top, type `cmd` and press **Enter**. A black window opens, already in the
+  right folder.
+- **Mac:** open **Terminal** (search for it with Cmd+Space), type `cd `
+  (with a space after it), drag the folder onto the Terminal window, and
+  press **Enter**.
+
+Type (or paste) the commands below into this window, one line at a time,
+pressing **Enter** after each. On a Mac, type `python3` and `pip3` instead of
+`python` and `pip`.
+
+### 4. Install the script's helpers
 
 ```bash
 pip install -r requirements.txt
 python -m playwright install chromium
+```
+
+This downloads the browser the script drives. It can take a few minutes.
+
+If Windows says `'python' is not recognized` or `'pip' is not recognized`,
+Python wasn't added to PATH. Go back to step 1, or try `py` instead of
+`python` and `py -m pip` instead of `pip`.
+
+### 5. Sign in to SwiftKitchen
+
+```bash
 python dinners.py login
 ```
 
-`login` opens a browser window. Sign in, tick **Remember me**, enter your
+This opens a browser window. Sign in, tick **Remember me**, enter your
 authenticator code, and wait for your dashboard. The window closes itself and
 your sign-in is saved in the `browser-profile` folder on your computer. Your
 password is never stored by this script. **Don't share or upload `browser-profile`**,
 because it holds your signed-in session.
+
+Setup is done. Whenever you use the script later, open a terminal in the
+folder first (step 3), then run the commands below.
 
 ## Teach it your children's meals
 
