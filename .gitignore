@@ -1,0 +1,9 @@
+# Saved SwiftKitchen login session - never commit
+browser-profile/
+
+# Your children's names and meals - personal, never commit
+rota.json
+
+__pycache__/
+.pytest_cache/
+snapshot_failures/

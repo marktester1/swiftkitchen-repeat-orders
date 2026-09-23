@@ -1,0 +1,56 @@
+{
+  "week1_starts": "2026-09-07",
+  "cycle_weeks": 3,
+  "children": {
+    "Alex Smith": {
+      "weeks": {
+        "1": {
+          "Mon": ["Macaroni Cheese"],
+          "Tue": ["Chilli Con Carne", "Jacket Potato"],
+          "Wed": ["Roast Chicken"],
+          "Thu": ["Cottage Pie"],
+          "Fri": ["Fish Fingers"]
+        },
+        "2": {
+          "Mon": ["Hot Pasta"],
+          "Tue": ["Bangers and Mash"],
+          "Wed": ["Roast Gammon"],
+          "Thu": ["Bolognese"],
+          "Fri": ["Fish Fingers"]
+        },
+        "3": {
+          "Mon": ["Macaroni Cheese"],
+          "Tue": ["Jacket Potato with Beans"],
+          "Wed": ["Roast Pork"],
+          "Thu": ["Sausage Roll"],
+          "Fri": ["Fish Fingers"]
+        }
+      }
+    },
+    "Sam Smith": {
+      "weeks": {
+        "1": {
+          "Mon": ["Allergen Menu - Jacket Potato"],
+          "Tue": null,
+          "Wed": ["Allergen Menu - Meat"],
+          "Thu": ["Allergen Menu - Meat"],
+          "Fri": ["Allergen Menu - Meat"]
+        },
+        "2": {
+          "Mon": ["Allergen Menu - Jacket Potato"],
+          "Tue": null,
+          "Wed": ["Allergen Menu - Meat"],
+          "Thu": ["Allergen Menu - Meat"],
+          "Fri": ["Allergen Menu - Meat"]
+        },
+        "3": {
+          "Mon": ["Allergen Menu - Jacket Potato"],
+          "Tue": null,
+          "Wed": ["Allergen Menu - Meat"],
+          "Thu": ["Allergen Menu - Meat"],
+          "Fri": ["Allergen Menu - Meat"]
+        }
+      }
+    }
+  }
+}
